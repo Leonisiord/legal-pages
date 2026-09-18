@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service</title>
+<style>
+:root{
+  --bg:#faf9f7;
+  --surface:#ffffff;
+  --ink:#1a1a1a;
+  --ink-soft:#5b5b5b;
+  --border:#e6e3dd;
+  --accent:#c81e4d;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#141312;
+    --surface:#1c1a19;
+    --ink:#f2efe9;
+    --ink-soft:#a8a29a;
+    --border:#332f2c;
+    --accent:#ff5c85;
+  }
+}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin:0;
+  padding:48px 16px;
+  line-height:1.65;
+}
+main{ max-width:640px; margin-inline:auto; }
+.eyebrow{
+  font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--accent); font-weight:600; margin-bottom:8px;
+}
+h1{ font-size:clamp(1.7rem, 4vw, 2.2rem); margin:0 0 6px; letter-spacing:-0.01em; }
+.updated{ color:var(--ink-soft); font-size:0.9rem; margin-bottom:36px; }
+h2{ font-size:1.05rem; margin:36px 0 10px; padding-top:20px; border-top:1px solid var(--border); }
+p{ margin:0 0 12px; font-size:0.98rem; }
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:10px;
+  padding:20px; margin-bottom:28px; font-size:0.92rem; color:var(--ink-soft);
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Legal</div>
+  <h1>Terms of Service</h1>
+  <div class="updated">Last updated: September 2026</div>
+
+  <div class="card">
+    This application is a personal automation tool built and operated by a single
+    individual developer for use with their own TikTok account. It is not offered
+    as a public product or service to third parties.
+  </div>
+
+  <h2>1. What this application does</h2>
+  <p>
+    The application generates short-form video content and, using TikTok's
+    official Content Posting API, uploads that content to the developer's own
+    TikTok account. Depending on the app's review status with TikTok, content
+    may be uploaded as a private draft for manual review and publishing, or
+    published directly.
+  </p>
+
+  <h2>2. Scope of use</h2>
+  <p>
+    This application connects only to the TikTok account explicitly authorized
+    by its developer through TikTok's OAuth login flow. It does not act on
+    behalf of, or request access to, any other TikTok account.
+  </p>
+
+  <h2>3. No warranty</h2>
+  <p>
+    The application is provided "as is", without warranty of any kind. The
+    developer makes no guarantee of uninterrupted operation, error-free
+    behavior, or fitness for any particular purpose.
+  </p>
+
+  <h2>4. Changes</h2>
+  <p>
+    These terms may be updated at any time to reflect changes in how the
+    application operates. Continued use of the application after a change
+    constitutes acceptance of the updated terms.
+  </p>
+
+  <h2>5. Contact</h2>
+  <p>
+    Questions about this application can be directed to its developer through
+    the contact information on file with TikTok for Developers.
+  </p>
+</main>
+</body>
+</html>

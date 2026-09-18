@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy</title>
+<style>
+:root{
+  --bg:#faf9f7;
+  --surface:#ffffff;
+  --ink:#1a1a1a;
+  --ink-soft:#5b5b5b;
+  --border:#e6e3dd;
+  --accent:#c81e4d;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#141312;
+    --surface:#1c1a19;
+    --ink:#f2efe9;
+    --ink-soft:#a8a29a;
+    --border:#332f2c;
+    --accent:#ff5c85;
+  }
+}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin:0;
+  padding:48px 16px;
+  line-height:1.65;
+}
+main{ max-width:640px; margin-inline:auto; }
+.eyebrow{
+  font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--accent); font-weight:600; margin-bottom:8px;
+}
+h1{ font-size:clamp(1.7rem, 4vw, 2.2rem); margin:0 0 6px; letter-spacing:-0.01em; }
+.updated{ color:var(--ink-soft); font-size:0.9rem; margin-bottom:36px; }
+h2{ font-size:1.05rem; margin:36px 0 10px; padding-top:20px; border-top:1px solid var(--border); }
+p{ margin:0 0 12px; font-size:0.98rem; }
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:10px;
+  padding:20px; margin-bottom:28px; font-size:0.92rem; color:var(--ink-soft);
+}
+table{ width:100%; border-collapse:collapse; margin:12px 0 20px; font-size:0.92rem; }
+th,td{ text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); }
+th{ color:var(--ink-soft); font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Legal</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: September 2026</div>
+
+  <div class="card">
+    This application is a personal automation tool operated by a single
+    individual developer for use with their own TikTok account only. It does
+    not collect, process, or store personal data belonging to any third party.
+  </div>
+
+  <h2>1. Data this application accesses</h2>
+  <p>
+    Through TikTok's official OAuth authorization flow, the application
+    accesses only the data required to upload video content to the
+    developer's own authorized TikTok account, such as:
+  </p>
+  <table>
+    <tr><th>Data</th><th>Purpose</th></tr>
+    <tr><td>OAuth access &amp; refresh tokens</td><td>Authenticate API requests to the developer's own account</td></tr>
+    <tr><td>Video file content</td><td>Uploaded to the account as a post or draft</td></tr>
+    <tr><td>Post metadata (title, caption)</td><td>Attached to the uploaded video</td></tr>
+  </table>
+
+  <h2>2. Data storage</h2>
+  <p>
+    OAuth tokens are stored locally on the developer's own device, in a
+    configuration file that is never transmitted to any third party or
+    external server. No data collected through this application is sold,
+    shared, or made available to anyone else.
+  </p>
+
+  <h2>3. Third-party accounts</h2>
+  <p>
+    This application does not access, request, or store data belonging to any
+    TikTok account other than the single account explicitly authorized by its
+    developer.
+  </p>
+
+  <h2>4. Data retention and deletion</h2>
+  <p>
+    OAuth tokens remain stored locally until the developer revokes access
+    (through TikTok's account settings) or manually deletes them. No copies
+    are retained elsewhere.
+  </p>
+
+  <h2>5. Changes to this policy</h2>
+  <p>
+    This policy may be updated to reflect changes in how the application
+    operates. The "last updated" date above reflects the most recent revision.
+  </p>
+
+  <h2>6. Contact</h2>
+  <p>
+    Questions about this policy can be directed to the developer through the
+    contact information on file with TikTok for Developers.
+  </p>
+</main>
+</body>
+</html>
